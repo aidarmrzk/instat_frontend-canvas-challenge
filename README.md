@@ -33,11 +33,18 @@ docs/                 задание и документация
 scripts/              проверки
 ```
 
-Назовите приложение в `apps/web` как `@canvas/web` и добавьте команды его запуска в README решения. Пока фронтенда нет, `npm run dev` запускает только API.
+`npm run dev` запускает API. Фронтенд запускается отдельно:
+
+```sh
+npm run dev:web
+```
+
+По умолчанию web доступен на `http://127.0.0.1:4173`.
 
 ```sh
 npm run check       # форматирование, сборка, тесты, OpenAPI
 npm run build
+npm run build:web   # сборка фронтенда apps/web
 npm start           # собранный бэкенд
 npm run smoke       # проверка по HTTP; API должен работать
 ```

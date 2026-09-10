@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.react-flow__node.connection-source > div {
+  outline: 2px solid #16a34a;
+  outline-offset: 2px;
+}
+
+.react-flow__node.connection-allowed > div {
+  outline: 2px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.react-flow__node.connection-blocked > div {
+  opacity: 0.45;
+  filter: grayscale(0.25);
+}
